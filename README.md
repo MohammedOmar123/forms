@@ -11,4 +11,4 @@
 - Check the .example.env file and add your database and all required data.
 - npm run start:dev to start the server.
 - cd client > run npm i command
-- To start the react application > run npm start
+- To start the react application >  npm start
