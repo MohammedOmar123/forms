@@ -2,6 +2,7 @@ import { Injectable, BadRequestException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
+
 import * as bcrypt from 'bcrypt';
 
 import { IndividualDto, BusinessDto } from './dto';
@@ -41,6 +42,6 @@ export class AuthService {
       expiresIn: '30d',
       secret,
     });
-    return { access_token };
+    return { access_token, message: 'Registration done successfully' };
   }
 }
