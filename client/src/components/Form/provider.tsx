@@ -65,7 +65,7 @@ export const rules = {
   }],
 
   yourExperience: [{
-    required: true,
+    required: false,
     message: 'Please input brief about Your Experience',
     type: 'string',
   }],
